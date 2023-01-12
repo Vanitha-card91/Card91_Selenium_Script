@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="MP Admin Login" verbose ="2">
+
+
+	<test name="Login Testcase">
+	
+	
+	<parameter name="env" value="Staging Sandbox"></parameter>
+	<parameter name="M_url" value="https://admin.sb.stag.card91.in/"></parameter>
+	<parameter name="email" value="mpsuper@mailinator.com"></parameter>
+	<parameter name="password" value="Test@123"></parameter>
+		
+
+		<classes>
+			<class name="testNG.LoginCard91Admin">
+				
+			</class>
+		</classes>
+	</test>
+
+
+</suite>

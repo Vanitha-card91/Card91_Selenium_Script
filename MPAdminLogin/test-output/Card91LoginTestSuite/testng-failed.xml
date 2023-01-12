@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Card91LoginTestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Login(failed)">
+    <parameter name="password" value="Test@123"/>
+    <parameter name="url" value="https://admin.sb.stag.card91.in/"/>
+    <parameter name="email" value="mpsuper@mailinator.com"/>
+    <classes>
+      <class name="testNG.Card91OverallFlow">
+        <methods>
+          <include name="KYCPortal"/>
+          <include name="Card_Creation"/>
+          <include name="Sub_Org_Creation"/>
+          <include name="Allocate_Money_to_SubOrg"/>
+          <include name="Delete_Webhook"/>
+          <include name="Login"/>
+          <include name="Test_Webhook"/>
+          <include name="Load_Money_to_Org"/>
+          <include name="LaunchBrowser"/>
+          <include name="Block_the_Card"/>
+          <include name="Freeze_Unfreeze_the_Card"/>
+          <include name="Add_Webhook"/>
+          <include name="Demo_Txn"/>
+          <include name="closeBrowser"/>
+          <include name="CardProgram_Creation"/>
+          <include name="Delete_Admin"/>
+          <include name="Add_Admin"/>
+          <include name="Edit_Webhook"/>
+          <include name="Block_Admin"/>
+          <include name="Load_Moneyto_Card"/>
+        </methods>
+      </class> <!-- testNG.Card91OverallFlow -->
+    </classes>
+  </test> <!-- Login(failed) -->
+</suite> <!-- Failed suite [Card91LoginTestSuite] -->
